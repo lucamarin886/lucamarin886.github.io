@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Experience | Luca Marin</title>
+  <meta name="description" content="Work experience of Luca Marin.">
+
+  <!-- Fonts: Lora for Headings, Inter for Body -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Tailwind CSS + shared theme -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="assets/theme.js"></script>
+  <link rel="stylesheet" href="assets/site.css">
+</head>
+<body class="bg-sand text-forest font-sans antialiased selection:bg-sandstone selection:text-white">
+
+  <!-- Navigation -->
+  <header class="fixed w-full top-0 z-50 bg-sand/80 backdrop-blur-md border-b border-sand-dark/70 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="index.html" class="font-serif text-2xl font-medium tracking-tight text-forest">
+        Luca Marin
+      </a>
+      <nav class="hidden lg:flex items-center gap-8 text-sm font-medium tracking-widest uppercase text-forest-light" aria-label="Main"><a href="index.html" class="py-1 transition-colors hover:text-sandstone">Home</a><a href="about.html" class="py-1 transition-colors hover:text-sandstone">About</a><a href="experience.html" class="py-1 transition-colors nav-current" aria-current="page">Experience</a><a href="education.html" class="py-1 transition-colors hover:text-sandstone">Education</a><a href="skills.html" class="py-1 transition-colors hover:text-sandstone">Skills</a><a href="index.html#contact" class="py-1 transition-colors hover:text-sandstone">Contact</a></nav>
+      <button id="menu-btn" class="lg:hidden text-forest text-2xl w-10 h-10 -mr-2 flex items-center justify-center" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+    <div id="mobile-menu" class="mobile-menu lg:hidden border-t border-sand-dark/70 bg-sand/95">
+      <div class="max-w-7xl mx-auto px-6 py-2 text-sm font-medium tracking-widest uppercase text-forest-light"><a href="index.html" class="block py-3 border-b border-sand-dark/60 ">Home</a><a href="about.html" class="block py-3 border-b border-sand-dark/60 ">About</a><a href="experience.html" class="block py-3 border-b border-sand-dark/60 text-sandstone">Experience</a><a href="education.html" class="block py-3 border-b border-sand-dark/60 ">Education</a><a href="skills.html" class="block py-3 border-b border-sand-dark/60 ">Skills</a><a href="index.html#contact" class="block py-3 border-b border-sand-dark/60 ">Contact</a></div>
+    </div>
+  </header>
+
+  <!-- Page banner -->
+  <section data-reveal="stagger" class="relative min-h-[62vh] bg-dune overflow-hidden flex flex-col justify-end px-6 pt-32 pb-28">
+    <div class="absolute inset-0 z-0">
+      <img src="assets/sonoma-hills.jpg" alt="" class="arid-photo w-full h-full object-cover scale-110" style="object-position: center 40%;">
+      <div class="absolute inset-0" style="background: linear-gradient(to bottom, rgba(244,241,234,.35) 0%, rgba(244,241,234,.62) 38%, rgba(244,241,234,.9) 80%, #F4F1EA 100%);"></div>
+      <div class="fog fog-drift w-[60%] h-24 left-[-10%] top-[58%]"></div>
+      <div class="fog fog-drift-slow w-[50%] h-20 right-[-8%] top-[70%]"></div>
+    </div>
+    <div class="relative z-10 max-w-7xl w-full mx-auto">
+      <p class="rv text-sandstone text-sm font-bold uppercase tracking-[0.2em] mb-4">Career · Experience</p>
+      <h1 class="rv font-serif text-5xl md:text-7xl text-forest leading-tight mb-6">The Journey So Far</h1>
+      <div class="rv w-16 h-1 bg-sandstone mb-6"></div>
+      <p class="rv max-w-2xl text-forest-light text-lg md:text-xl font-light leading-relaxed">From warehouse floors and Salesforce sandboxes to air-traffic radio hardware, every role has added a new tool and a new way of solving problems.</p>
+    </div>
+  </section>
+
+  <section class="relative pb-40 md:pb-52 overflow-hidden" style="background: linear-gradient(to bottom, #F4F1EA, #EFE7D4);">
+    <div class="fog fog-drift-slow w-[40%] h-32 right-[5%] top-[10%]"></div>
+    <div class="relative z-10 max-w-5xl mx-auto px-6">
+      <div class="flex flex-wrap items-center gap-2 mb-12" role="group" aria-label="Filter roles">
+        <span class="text-xs font-bold uppercase tracking-widest text-forest-light mr-2">Show</span>
+        <button class="filter-btn active" data-filter="all" aria-pressed="true">All roles</button><button class="filter-btn" data-filter="technology" aria-pressed="false">Technology</button><button class="filter-btn" data-filter="electronics" aria-pressed="false">Electronics</button><button class="filter-btn" data-filter="operations" aria-pressed="false">Operations</button><button class="filter-btn" data-filter="service" aria-pressed="false">Service</button><button class="filter-btn" data-filter="travel" aria-pressed="false">Travel</button>
+      </div>
+      <ol data-reveal="stagger" class="timeline space-y-8">
+        <li class="tl-item rv relative pl-10 md:pl-14" data-cat="technology">
+          <span class="tl-dot" aria-hidden="true"></span>
+          <article class="frost rounded-3xl p-7 md:p-10 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
+            <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-3 mb-4">
+              <div>
+                <p class="text-sandstone text-xs font-bold uppercase tracking-[0.2em] mb-2"><i class="fa-solid fa-code mr-1.5"></i>Technology</p>
+                <h3 class="font-serif text-2xl md:text-3xl text-forest">Cycle 7 Solutions Intern</h3>
+                <p class="text-forest-light text-lg mt-1">i.c. stars <span class="text-sage-dark">· Kansas City</span></p>
+              </div>
+              <div class="flex md:flex-col md:items-end gap-2 flex-none">
+                <span class="text-forest-light text-sm font-medium whitespace-nowrap"><i class="fa-regular fa-calendar mr-1.5 text-sandstone"></i>Aug 2026 – Present</span>
+                <span class="chip" style="background:#2C5530;color:#F4F1EA;border-color:#2C5530">Current</span>
+              </div>
+            </div>
+            <ul class="space-y-2 text-forest-light text-base md:text-lg font-light leading-relaxed mb-5"><li class="flex gap-3"><span class="mt-2.5 w-1.5 h-1.5 rounded-full bg-sandstone flex-none"></span><span>Taking part in a 14-week technology and business leadership development program built on hands-on, project-based learning.</span></li><li class="flex gap-3"><span class="mt-2.5 w-1.5 h-1.5 rounded-full bg-sandstone flex-none"></span><span>Worked in teams to plan, build, and present technology solutions to real business problems.</span></li></ul>
+            <div class="flex flex-wrap gap-2"><span class="chip">Leadership</span><span class="chip">Project-based learning</span><span class="chip">Teamwork</span></div>
+          </article>
+        </li>
+        <li class="tl-item rv relative pl-10 md:pl-14" data-cat="service">
+          <span class="tl-dot" aria-hidden="true"></span>
+          <article class="frost rounded-3xl p-7 md:p-10 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
+            <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-3 mb-4">
+              <div>
+                <p class="text-sandstone text-xs font-bold uppercase tracking-[0.2em] mb-2"><i class="fa-solid fa-handshake mr-1.5"></i>Service</p>
+                <h3 class="font-serif text-2xl md:text-3xl text-forest">Event, Hospitality and Warehouse Staff (On‑Demand)</h3>
+                <p class="text-forest-light text-lg mt-1">Instawork <span class="text-sage-dark">· U.S. and Canada</span></p>
+              </div>
+              <div class="flex md:flex-col md:items-end gap-2 flex-none">
+                <span class="text-forest-light text-sm font-medium whitespace-nowrap"><i class="fa-regular fa-calendar mr-1.5 text-sandstone"></i>Oct 2022 – Present</span>
+                <span class="chip" style="background:#2C5530;color:#F4F1EA;border-color:#2C5530">Current</span>
+              </div>
+            </div>
+            <ul class="space-y-2 text-forest-light text-base md:text-lg font-light leading-relaxed mb-5"><li class="flex gap-3"><span class="mt-2.5 w-1.5 h-1.5 rounded-full bg-sandstone flex-none"></span><span>Served as event server, bartender, barback, and runner at auctions, country clubs, and restaurants, and as prep cook, dishwasher, and warehouse associate behind the scenes.</span></li><li class="flex gap-3"><span class="mt-2.5 w-1.5 h-1.5 rounded-full bg-sandstone flex-none"></span><span>Join new teams at new venues, including nursing homes, and adapt quickly to how each site runs.</span></li><li class="flex gap-3"><span class="mt-2.5 w-1.5 h-1.5 rounded-full bg-sandstone flex-none"></span><span>Bring the same professional standard to every shift: a full, pressed uniform and readiness for any task.</span></li><li class="flex gap-3"><span class="mt-2.5 w-1.5 h-1.5 rounded-full bg-sandstone flex-none"></span><span>Funded my 2024–2025 solo motorcycle sabbatical across the American West by picking up Instawork shifts along the way.</span></li></ul>
+            <div class="flex flex-wrap gap-2"><span class="chip">Hospitality</span><span class="chip">Food service</span><span class="chip">Events</span><span class="chip">Warehouse</span></div>
+          </article>
+        </li>
+        <li class="tl-item rv relative pl-10 md:pl-14" data-cat="electronics">
+          <span class="tl-dot" aria-hidden="true"></span>
+          <article class="frost rounded-3xl p-7 md:p-10 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
+            <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-3 mb-4">
+              <div>
+                <p class="text-sandstone text-xs font-bold uppercase tracking-[0.2em] mb-2"><i class="fa-solid fa-microchip mr-1.5"></i>Electronics</p>
+                <h3 class="font-serif text-2xl md:text-3xl text-forest">Assembler and Test Technician</h3>
+                <p class="text-forest-light text-lg mt-1">Indra Air Traffic <span class="text-sage-dark">· Overland Park, KS</span></p>
+              </div>
+              <div class="flex md:flex-col md:items-end gap-2 flex-none">
+                <span class="text-forest-light text-sm font-medium whitespace-nowrap"><i class="fa-regular fa-calendar mr-1.5 text-sandstone"></i>May 2026 – Aug 2026</span>
+                
+              </div>
+            </div>
+            <ul class="space-y-2 text-forest-light text-base md:text-lg font-light leading-relaxed mb-5"><li class="flex gap-3"><span class="mt-2.5 w-1.5 h-1.5 rounded-full bg-sandstone flex-none"></span><span>Assemble Park Air brand receiver and transmitter units from schematics and run current-loading safety checks.</span></li><li class="flex gap-3"><span class="mt-2.5 w-1.5 h-1.5 rounded-full bg-sandstone flex-none"></span><span>Use HiPot testers and signal analyzers to diagnose and rework malfunctioning units, cross-training teammates over Microsoft Teams.</span></li></ul>
+            <div class="flex flex-wrap gap-2"><span class="chip">Schematics</span><span class="chip">HiPot testing</span><span class="chip">Signal analyzers</span></div>
+          </article>
+        </li>
+        <li class="tl-item rv relative pl-10 md:pl-14" data-cat="travel">
+          <span class="tl-dot" aria-hidden="true"></span>
+          <article class="frost rounded-3xl p-7 md:p-10 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
+            <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-3 mb-4">
+              <div>
+                <p class="text-sandstone text-xs font-bold uppercase tracking-[0.2em] mb-2"><i class="fa-solid fa-motorcycle mr-1.5"></i>Travel</p>
+                <h3 class="font-serif text-2xl md:text-3xl text-forest">Hosteling Volunteer / Travel Sabbatical via Motorcycle</h3>
+                <p class="text-forest-light text-lg mt-1">Solo expedition <span class="text-sage-dark">· Kansas City, MO to Portland, OR</span></p>
+              </div>
+              <div class="flex md:flex-col md:items-end gap-2 flex-none">
+                <span class="text-forest-light text-sm font-medium whitespace-nowrap"><i class="fa-regular fa-calendar mr-1.5 text-sandstone"></i>May 2024 – Apr 2025</span>
+                
+              </div>
+            </div>
+            <ul class="space-y-2 text-forest-light text-base md:text-lg font-light leading-relaxed mb-5"><li class="flex gap-3"><span class="mt-2.5 w-1.5 h-1.5 rounded-full bg-sandstone flex-none"></span><span>Planned and self-funded a solo motorcycle expedition across the American West, from Kansas City, MO to Portland, OR.</span></li><li class="flex gap-3"><span class="mt-2.5 w-1.5 h-1.5 rounded-full bg-sandstone flex-none"></span><span>Logged 2,713 miles through blizzards, sleet, and heat over 123°F, keeping the bike running with constant maintenance and an engine overhaul in San Francisco, CA.</span></li><li class="flex gap-3"><span class="mt-2.5 w-1.5 h-1.5 rounded-full bg-sandstone flex-none"></span><span>Continued by train to Seattle and back to California.</span></li></ul>
+            <div class="flex flex-wrap gap-2"><span class="chip">Self-reliance</span><span class="chip">Mechanical repair</span><span class="chip">Trip planning</span></div>
+          </article>
+        </li>
+        <li class="tl-item rv relative pl-10 md:pl-14" data-cat="operations">
+          <span class="tl-dot" aria-hidden="true"></span>
+          <article class="frost rounded-3xl p-7 md:p-10 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
+            <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-3 mb-4">
+              <div>
+                <p class="text-sandstone text-xs font-bold uppercase tracking-[0.2em] mb-2"><i class="fa-solid fa-truck-ramp-box mr-1.5"></i>Operations</p>
+                <h3 class="font-serif text-2xl md:text-3xl text-forest">Stand-Up Forklift Operator</h3>
+                <p class="text-forest-light text-lg mt-1">Hostess Brands <span class="text-sage-dark">· Edgerton, KS</span></p>
+              </div>
+              <div class="flex md:flex-col md:items-end gap-2 flex-none">
+                <span class="text-forest-light text-sm font-medium whitespace-nowrap"><i class="fa-regular fa-calendar mr-1.5 text-sandstone"></i>May 2023 – Aug 2023</span>
+                
+              </div>
+            </div>
+            <ul class="space-y-2 text-forest-light text-base md:text-lg font-light leading-relaxed mb-5"><li class="flex gap-3"><span class="mt-2.5 w-1.5 h-1.5 rounded-full bg-sandstone flex-none"></span><span>Worked outbound on 12-hour shifts, using Raymond stand-up counterbalance forklifts to bulk pick product to its bays and replenish case-pickers.</span></li><li class="flex gap-3"><span class="mt-2.5 w-1.5 h-1.5 rounded-full bg-sandstone flex-none"></span><span>Loaded LTL trailers and secured product with inflatable dunnage and straps to prevent damage.</span></li></ul>
+            <div class="flex flex-wrap gap-2"><span class="chip">Raymond forklifts</span><span class="chip">LTL loading</span></div>
+          </article>
+        </li>
+        <li class="tl-item rv relative pl-10 md:pl-14" data-cat="operations">
+          <span class="tl-dot" aria-hidden="true"></span>
+          <article class="frost rounded-3xl p-7 md:p-10 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
+            <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-3 mb-4">
+              <div>
+                <p class="text-sandstone text-xs font-bold uppercase tracking-[0.2em] mb-2"><i class="fa-solid fa-truck-ramp-box mr-1.5"></i>Operations</p>
+                <h3 class="font-serif text-2xl md:text-3xl text-forest">Material Handler</h3>
+                <p class="text-forest-light text-lg mt-1">Thermo Fisher Scientific <span class="text-sage-dark">· Lenexa, KS</span></p>
+              </div>
+              <div class="flex md:flex-col md:items-end gap-2 flex-none">
+                <span class="text-forest-light text-sm font-medium whitespace-nowrap"><i class="fa-regular fa-calendar mr-1.5 text-sandstone"></i>Jan 2023 – Apr 2023</span>
+                
+              </div>
+            </div>
+            <ul class="space-y-2 text-forest-light text-base md:text-lg font-light leading-relaxed mb-5"><li class="flex gap-3"><span class="mt-2.5 w-1.5 h-1.5 rounded-full bg-sandstone flex-none"></span><span>Replenished pallets, boxes, and materials for line workers and ordered supplies as needed.</span></li><li class="flex gap-3"><span class="mt-2.5 w-1.5 h-1.5 rounded-full bg-sandstone flex-none"></span><span>Processed, wrapped, and loaded pallets onto trailers with manual and electric pallet jacks and an electric forklift.</span></li></ul>
+            <div class="flex flex-wrap gap-2"><span class="chip">PIT equipment</span><span class="chip">Material ordering</span></div>
+          </article>
+        </li>
+        <li class="tl-item rv relative pl-10 md:pl-14" data-cat="operations">
+          <span class="tl-dot" aria-hidden="true"></span>
+          <article class="frost rounded-3xl p-7 md:p-10 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
+            <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-3 mb-4">
+              <div>
+                <p class="text-sandstone text-xs font-bold uppercase tracking-[0.2em] mb-2"><i class="fa-solid fa-truck-ramp-box mr-1.5"></i>Operations</p>
+                <h3 class="font-serif text-2xl md:text-3xl text-forest">Freight Handler and Forklift Operator</h3>
+                <p class="text-forest-light text-lg mt-1">FedEx Freight <span class="text-sage-dark">· Edwardsville, KS</span></p>
+              </div>
+              <div class="flex md:flex-col md:items-end gap-2 flex-none">
+                <span class="text-forest-light text-sm font-medium whitespace-nowrap"><i class="fa-regular fa-calendar mr-1.5 text-sandstone"></i>Jun 2022 – Nov 2022</span>
+                
+              </div>
+            </div>
+            <ul class="space-y-2 text-forest-light text-base md:text-lg font-light leading-relaxed mb-5"><li class="flex gap-3"><span class="mt-2.5 w-1.5 h-1.5 rounded-full bg-sandstone flex-none"></span><span>Weighed, dimensioned, and transferred freight on propane forklifts to a strict priority schedule, following Hazmat guidelines.</span></li><li class="flex gap-3"><span class="mt-2.5 w-1.5 h-1.5 rounded-full bg-sandstone flex-none"></span><span>Built decks above cargo with dunnage, straps, and steel beams to make the most of trailer space, and tagged freight with RFID for live tracking.</span></li></ul>
+            <div class="flex flex-wrap gap-2"><span class="chip">Hazmat</span><span class="chip">RFID</span><span class="chip">Propane forklifts</span></div>
+          </article>
+        </li>
+        <li class="tl-item rv relative pl-10 md:pl-14" data-cat="operations">
+          <span class="tl-dot" aria-hidden="true"></span>
+          <article class="frost rounded-3xl p-7 md:p-10 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
+            <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-3 mb-4">
+              <div>
+                <p class="text-sandstone text-xs font-bold uppercase tracking-[0.2em] mb-2"><i class="fa-solid fa-truck-ramp-box mr-1.5"></i>Operations</p>
+                <h3 class="font-serif text-2xl md:text-3xl text-forest">Warehouse Associate / Forklift Operator</h3>
+                <p class="text-forest-light text-lg mt-1">Transformco <span class="text-sage-dark">· Kansas City area</span></p>
+              </div>
+              <div class="flex md:flex-col md:items-end gap-2 flex-none">
+                <span class="text-forest-light text-sm font-medium whitespace-nowrap"><i class="fa-regular fa-calendar mr-1.5 text-sandstone"></i>Jan 2022 – Apr 2022</span>
+                
+              </div>
+            </div>
+            <ul class="space-y-2 text-forest-light text-base md:text-lg font-light leading-relaxed mb-5"><li class="flex gap-3"><span class="mt-2.5 w-1.5 h-1.5 rounded-full bg-sandstone flex-none"></span><span>Handled inbound and outbound orders averaging five to six LTL trailers per shift.</span></li><li class="flex gap-3"><span class="mt-2.5 w-1.5 h-1.5 rounded-full bg-sandstone flex-none"></span><span>Operated Crown forklifts with clamp attachments and organized inventory with Flexe scanners and LPNs.</span></li></ul>
+            <div class="flex flex-wrap gap-2"><span class="chip">Crown forklifts</span><span class="chip">Inventory scanning</span></div>
+          </article>
+        </li>
+        <li class="tl-item rv relative pl-10 md:pl-14" data-cat="service">
+          <span class="tl-dot" aria-hidden="true"></span>
+          <article class="frost rounded-3xl p-7 md:p-10 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
+            <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-3 mb-4">
+              <div>
+                <p class="text-sandstone text-xs font-bold uppercase tracking-[0.2em] mb-2"><i class="fa-solid fa-handshake mr-1.5"></i>Service</p>
+                <h3 class="font-serif text-2xl md:text-3xl text-forest">Desk Assistant</h3>
+                <p class="text-forest-light text-lg mt-1">The University of Kansas <span class="text-sage-dark">· Lawrence, KS</span></p>
+              </div>
+              <div class="flex md:flex-col md:items-end gap-2 flex-none">
+                <span class="text-forest-light text-sm font-medium whitespace-nowrap"><i class="fa-regular fa-calendar mr-1.5 text-sandstone"></i>Aug 2020 – Aug 2021</span>
+                
+              </div>
+            </div>
+            <ul class="space-y-2 text-forest-light text-base md:text-lg font-light leading-relaxed mb-5"><li class="flex gap-3"><span class="mt-2.5 w-1.5 h-1.5 rounded-full bg-sandstone flex-none"></span><span>Staffed the residence hall front desk on day and night shifts, upholding hall policies and handling light administrative work.</span></li></ul>
+            <div class="flex flex-wrap gap-2"><span class="chip">Customer service</span><span class="chip">Administration</span></div>
+          </article>
+        </li>
+        <li class="tl-item rv relative pl-10 md:pl-14" data-cat="technology">
+          <span class="tl-dot" aria-hidden="true"></span>
+          <article class="frost rounded-3xl p-7 md:p-10 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
+            <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-3 mb-4">
+              <div>
+                <p class="text-sandstone text-xs font-bold uppercase tracking-[0.2em] mb-2"><i class="fa-solid fa-code mr-1.5"></i>Technology</p>
+                <h3 class="font-serif text-2xl md:text-3xl text-forest">Innovation Intern</h3>
+                <p class="text-forest-light text-lg mt-1">CommunityAmerica Credit Union <span class="text-sage-dark">· Remote</span></p>
+              </div>
+              <div class="flex md:flex-col md:items-end gap-2 flex-none">
+                <span class="text-forest-light text-sm font-medium whitespace-nowrap"><i class="fa-regular fa-calendar mr-1.5 text-sandstone"></i>Mar 2020 – May 2020</span>
+                
+              </div>
+            </div>
+            <ul class="space-y-2 text-forest-light text-base md:text-lg font-light leading-relaxed mb-5"><li class="flex gap-3"><span class="mt-2.5 w-1.5 h-1.5 rounded-full bg-sandstone flex-none"></span><span>Worked remotely during COVID-19 alongside an entrepreneur and a digital architect, analyzing how diverse teens and young adults understand credit.</span></li><li class="flex gap-3"><span class="mt-2.5 w-1.5 h-1.5 rounded-full bg-sandstone flex-none"></span><span>Helped shape an initiative for an app that rewards young people for learning how credit and money work.</span></li></ul>
+            <div class="flex flex-wrap gap-2"><span class="chip">Research</span><span class="chip">Financial literacy</span><span class="chip">Product ideas</span></div>
+          </article>
+        </li>
+        <li class="tl-item rv relative pl-10 md:pl-14" data-cat="technology">
+          <span class="tl-dot" aria-hidden="true"></span>
+          <article class="frost rounded-3xl p-7 md:p-10 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
+            <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-3 mb-4">
+              <div>
+                <p class="text-sandstone text-xs font-bold uppercase tracking-[0.2em] mb-2"><i class="fa-solid fa-code mr-1.5"></i>Technology</p>
+                <h3 class="font-serif text-2xl md:text-3xl text-forest">Salesforce Developer Intern</h3>
+                <p class="text-forest-light text-lg mt-1">UGA Finance <span class="text-sage-dark">· Kansas City, MO</span></p>
+              </div>
+              <div class="flex md:flex-col md:items-end gap-2 flex-none">
+                <span class="text-forest-light text-sm font-medium whitespace-nowrap"><i class="fa-regular fa-calendar mr-1.5 text-sandstone"></i>Nov 2019 – Feb 2020</span>
+                
+              </div>
+            </div>
+            <ul class="space-y-2 text-forest-light text-base md:text-lg font-light leading-relaxed mb-5"><li class="flex gap-3"><span class="mt-2.5 w-1.5 h-1.5 rounded-full bg-sandstone flex-none"></span><span>Converted company spreadsheet operations into Salesforce Lightning, increasing productivity and efficiency.</span></li><li class="flex gap-3"><span class="mt-2.5 w-1.5 h-1.5 rounded-full bg-sandstone flex-none"></span><span>Built custom objects, Apex triggers and handlers, and a workflow button that creates payment, adjustment, or reverse collection transactions from a collection account.</span></li></ul>
+            <div class="flex flex-wrap gap-2"><span class="chip">Salesforce Lightning</span><span class="chip">Apex</span><span class="chip">Workflows</span></div>
+          </article>
+        </li>
+        <li class="tl-item rv relative pl-10 md:pl-14" data-cat="technology">
+          <span class="tl-dot" aria-hidden="true"></span>
+          <article class="frost rounded-3xl p-7 md:p-10 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
+            <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-3 mb-4">
+              <div>
+                <p class="text-sandstone text-xs font-bold uppercase tracking-[0.2em] mb-2"><i class="fa-solid fa-code mr-1.5"></i>Technology</p>
+                <h3 class="font-serif text-2xl md:text-3xl text-forest">Technology Solutions Associate</h3>
+                <p class="text-forest-light text-lg mt-1">Northland CAPS <span class="text-sage-dark">· Kansas City, MO</span></p>
+              </div>
+              <div class="flex md:flex-col md:items-end gap-2 flex-none">
+                <span class="text-forest-light text-sm font-medium whitespace-nowrap"><i class="fa-regular fa-calendar mr-1.5 text-sandstone"></i>Aug 2019 – Dec 2019</span>
+                
+              </div>
+            </div>
+            <ul class="space-y-2 text-forest-light text-base md:text-lg font-light leading-relaxed mb-5"><li class="flex gap-3"><span class="mt-2.5 w-1.5 h-1.5 rounded-full bg-sandstone flex-none"></span><span>Took part in a professional-skills program that shaped how I present myself and the work ethic I bring to every job.</span></li></ul>
+            <div class="flex flex-wrap gap-2"><span class="chip">Professionalism</span><span class="chip">Technology solutions</span></div>
+          </article>
+        </li>
+        <li class="tl-item rv relative pl-10 md:pl-14" data-cat="service">
+          <span class="tl-dot" aria-hidden="true"></span>
+          <article class="frost rounded-3xl p-7 md:p-10 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
+            <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-3 mb-4">
+              <div>
+                <p class="text-sandstone text-xs font-bold uppercase tracking-[0.2em] mb-2"><i class="fa-solid fa-handshake mr-1.5"></i>Service</p>
+                <h3 class="font-serif text-2xl md:text-3xl text-forest">Data Entry Specialist / Warehouse Associate</h3>
+                <p class="text-forest-light text-lg mt-1">Worlds of Fun <span class="text-sage-dark">· Kansas City, MO</span></p>
+              </div>
+              <div class="flex md:flex-col md:items-end gap-2 flex-none">
+                <span class="text-forest-light text-sm font-medium whitespace-nowrap"><i class="fa-regular fa-calendar mr-1.5 text-sandstone"></i>Jul 2018 – Jul 2019</span>
+                
+              </div>
+            </div>
+            <ul class="space-y-2 text-forest-light text-base md:text-lg font-light leading-relaxed mb-5"><li class="flex gap-3"><span class="mt-2.5 w-1.5 h-1.5 rounded-full bg-sandstone flex-none"></span><span>Recorded the food warehouse inventory in the FOOD-TRAK database and created weekly requisitions so every park restaurant got next-day deliveries.</span></li></ul>
+            <div class="flex flex-wrap gap-2"><span class="chip">FOOD-TRAK</span><span class="chip">Data entry</span><span class="chip">Inventory</span></div>
+          </article>
+        </li>
+      </ol>
+    </div>
+    <svg class="hills h-24 md:h-32" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0 60 C240 10 480 70 760 45 S1200 5 1440 40 V120 H0Z" fill="#C9A66B" opacity=".35"/>
+      <path d="M0 95 C300 55 620 115 960 80 S1320 70 1440 85 V120 H0Z" fill="#F4F1EA"/>
+    </svg>
+  </section>
+
+  <section data-reveal="stagger" class="relative py-20 bg-sand overflow-hidden">
+    <div class="fog fog-drift w-[45%] h-32 left-[-5%] top-[20%]"></div>
+    <div class="relative z-10 max-w-3xl mx-auto px-6 text-center">
+      <h2 class="rv font-serif text-3xl md:text-4xl text-forest mb-4">Let's build what's next together</h2>
+      <p class="rv text-forest-light text-lg font-light mb-8">I bring a technician’s precision, a developer’s curiosity, and eight years of putting people first.</p>
+      <div class="rv flex flex-wrap justify-center gap-3">
+        <a href="index.html#contact" class="px-8 py-4 bg-forest hover:bg-sandstone text-sand rounded-xl font-medium tracking-wide transition-colors inline-flex items-center gap-3">Get in touch <i class="fa-solid fa-arrow-right"></i></a>
+        <a href="https://www.linkedin.com/in/luca-marin10/" target="_blank" rel="noopener" class="px-8 py-4 frost hover:bg-white rounded-xl font-medium tracking-wide transition-colors inline-flex items-center gap-3 text-forest"><i class="fa-brands fa-linkedin"></i> View LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer: dusk hills -->
+  <footer class="relative bg-sand pt-20 md:pt-28">
+    <svg class="absolute top-0 left-0 w-full h-20 md:h-28" viewBox="0 0 1440 110" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0 60 C260 10 520 70 780 48 S1220 0 1440 38 V110 H0Z" fill="#7C8466"/>
+      <path d="M0 92 C320 55 680 110 1000 80 S1330 70 1440 86 V110 H0Z" fill="#4E5A45"/>
+    </svg>
+    <div class="py-12" style="background: linear-gradient(to bottom, #4E5A45, #323C30);">
+      <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+        <div class="font-serif text-2xl text-sand">Luca Marin<span class="text-sandstone">.</span></div>
+        <div class="flex gap-6 text-sand-dark text-xl">
+          <a href="https://www.linkedin.com/in/luca-marin10/" target="_blank" rel="noopener" class="hover:text-sandstone transition-colors" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="mailto:adr0itlearn3r@gmail.com" class="hover:text-sandstone transition-colors" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+        <div class="text-sage text-sm text-center md:text-right">
+          <p>&copy; 2026 Luca Marin · Overland Park, KS</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/site.js"></script>
+</body>
+</html>

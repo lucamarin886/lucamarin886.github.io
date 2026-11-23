@@ -1,21 +1,249 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
-      <title>Document</title>
-  </head>
-  <body>
-    <h1>This is my Portfolioli</h1>
-    <h2>About me:</h2>
-    <p>Current ICStars Intern and former student. </p>
-    <h3>CAN YOU SEE THIS?</h3>
-    <h4>CAN YOU SEE THIS?</h4>
-    <h5>CAN YOU SEE THIS?</h5>
-    <p>Current ICstars INternnnnnn</p>
-    <h6>CAN YOU SEE THIS????</h6>
-    <h7>CAN YOU SEE THISsss????</h7>
-    <h8>CAN YOU SEE THIS??s?</h8>
-    <h9>CAN YOU SEE THIS??</h9>
-  </body>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luca Marin | Technology, Electronics & Problem Solving</title>
+  <meta name="description" content="Portfolio of Luca Marin, a Kansas City problem solver in technology, electronics, and operations.">
+
+  <!-- Fonts: Lora for Headings, Inter for Body -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Tailwind CSS + shared theme -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="assets/theme.js"></script>
+  <link rel="stylesheet" href="assets/site.css">
+</head>
+<body class="bg-sand text-forest font-sans antialiased selection:bg-sandstone selection:text-white">
+
+  <!-- Navigation -->
+  <header class="fixed w-full top-0 z-50 bg-sand/80 backdrop-blur-md border-b border-sand-dark/70 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="#home" class="font-serif text-2xl font-medium tracking-tight text-forest">
+        Luca Marin
+      </a>
+      <nav class="hidden lg:flex items-center gap-8 text-sm font-medium tracking-widest uppercase text-forest-light" aria-label="Main">
+        <a href="#identity" class="hover:text-sandstone transition-colors">My Identity</a><a href="#expertise" class="hover:text-sandstone transition-colors">Expertise</a><a href="#trajectory" class="hover:text-sandstone transition-colors">Trajectory</a><a href="#contact" class="hover:text-sandstone transition-colors">Contact</a>
+        <span class="w-px h-6 bg-sand-dark" aria-hidden="true"></span>
+        <div class="flex items-center gap-2 normal-case tracking-normal"><a href="about.html" target="_blank" rel="noopener" class="tab-link">About <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i><span class="sr-only"> (opens in a new window)</span></a><a href="experience.html" target="_blank" rel="noopener" class="tab-link">Experience <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i><span class="sr-only"> (opens in a new window)</span></a><a href="education.html" target="_blank" rel="noopener" class="tab-link">Education <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i><span class="sr-only"> (opens in a new window)</span></a><a href="skills.html" target="_blank" rel="noopener" class="tab-link">Skills <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i><span class="sr-only"> (opens in a new window)</span></a></div>
+      </nav>
+      <button id="menu-btn" class="lg:hidden text-forest text-2xl w-10 h-10 -mr-2 flex items-center justify-center" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+    <div id="mobile-menu" class="mobile-menu lg:hidden border-t border-sand-dark/70 bg-sand/95">
+      <div class="max-w-7xl mx-auto px-6 py-2 text-sm font-medium tracking-widest uppercase text-forest-light"><a href="#identity" class="block py-3 border-b border-sand-dark/60">My Identity</a><a href="#expertise" class="block py-3 border-b border-sand-dark/60">Expertise</a><a href="#trajectory" class="block py-3 border-b border-sand-dark/60">Trajectory</a><a href="#contact" class="block py-3 border-b border-sand-dark/60">Contact</a><a href="about.html" target="_blank" rel="noopener" class="block py-3 border-b border-sand-dark/60">About <i class="fa-solid fa-arrow-up-right-from-square text-xs text-sandstone"></i></a><a href="experience.html" target="_blank" rel="noopener" class="block py-3 border-b border-sand-dark/60">Experience <i class="fa-solid fa-arrow-up-right-from-square text-xs text-sandstone"></i></a><a href="education.html" target="_blank" rel="noopener" class="block py-3 border-b border-sand-dark/60">Education <i class="fa-solid fa-arrow-up-right-from-square text-xs text-sandstone"></i></a><a href="skills.html" target="_blank" rel="noopener" class="block py-3 border-b border-sand-dark/60">Skills <i class="fa-solid fa-arrow-up-right-from-square text-xs text-sandstone"></i></a></div>
+    </div>
+  </header>
+
+  <!-- Hero Section: Sonoma photo bookend (sky and sun crop) -->
+  <section id="home" data-reveal="stagger" class="relative min-h-screen bg-dune overflow-hidden flex flex-col justify-center items-center text-center px-6 pt-20">
+    <div class="absolute inset-0 z-0">
+      <img src="assets/sonoma-hills.jpg" alt="Sunrise over fog-filled Sonoma hills" class="arid-photo w-full h-full object-cover object-[center_0%] scale-110">
+      <div class="absolute inset-0" style="background: linear-gradient(to bottom, rgba(212,122,74,.15) 0%, rgba(244,241,234,.35) 55%, rgba(244,241,234,.85) 88%, #F4F1EA 100%);"></div>
+      <div class="fog fog-drift w-[60%] h-24 left-[-10%] top-[62%]"></div>
+      <div class="fog fog-drift-slow w-[50%] h-20 right-[-8%] top-[72%]"></div>
+    </div>
+    <div class="relative z-10 max-w-4xl mx-auto mt-16">
+      <h1 class="rv font-serif text-5xl md:text-7xl lg:text-8xl text-forest mb-8 leading-tight">
+        Welcome to Luca's Career Manifestation
+      </h1>
+      <div class="rv w-16 h-1 bg-sandstone mx-auto mb-8"></div>
+      <p class="rv text-forest-light text-lg md:text-xl font-light tracking-wide">i.c. stars Solutions Intern · Electronics Technician · Kansas City</p>
+    </div>
+    <a href="#identity" class="absolute z-10 bottom-10 text-forest-light/70 hover:text-sandstone transition-colors text-xl" aria-label="Scroll to Identity">
+      <i class="fa-solid fa-chevron-down"></i>
+    </a>
+  </section>
+
+  <!-- Identity Section -->
+  <section id="identity" data-reveal="stagger" class="relative pt-24 pb-40 md:pt-32 md:pb-52 overflow-hidden" style="background: linear-gradient(to bottom, #F4F1EA, #EFE7D4);">
+    <div class="fog fog-drift-slow w-[40%] h-32 right-[5%] top-[20%]"></div>
+    <div class="relative z-10 max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+      <div class="rv relative h-[600px] md:h-[680px] rounded-2xl overflow-hidden shadow-xl ring-1 ring-white/60">
+        <img src="https://i.etsystatic.com/61173710/r/il/2f383a/8020024813/il_570xN.8020024813_b3tq.jpg" alt="Minimalist abstract art" class="absolute inset-0 w-full h-full object-cover">
+        <div class="absolute inset-0 bg-ochre/10 mix-blend-multiply"></div>
+      </div>
+
+      <div class="flex flex-col justify-center">
+        <p class="rv text-sandstone text-sm font-bold uppercase tracking-[0.2em] mb-4">01 / My Identity</p>
+        <h2 class="rv font-serif text-4xl md:text-5xl lg:text-6xl text-forest mb-12 leading-tight">
+          The Personal Drive
+        </h2>
+
+        <div class="rv frost rounded-2xl p-8 mb-6 group">
+          <h3 class="font-serif text-2xl md:text-3xl text-forest mb-3 flex items-center gap-4">
+            <i class="fa-solid fa-compass text-sandstone text-xl opacity-0 group-hover:opacity-100 transition-opacity"></i>
+            Adaptive
+          </h3>
+          <p class="text-forest-light text-lg md:text-xl font-light leading-relaxed pl-0 group-hover:pl-9 transition-all duration-300">
+            From loading docks to Salesforce sandboxes to radio-assembly benches, I learn a new environment fast, find my footing, and then look for a better way to do the work.
+          </p>
+        </div>
+        <div class="rv frost rounded-2xl p-8 mb-6 group">
+          <h3 class="font-serif text-2xl md:text-3xl text-forest mb-3 flex items-center gap-4">
+            <i class="fa-solid fa-anchor text-sandstone text-xl opacity-0 group-hover:opacity-100 transition-opacity"></i>
+            Driven by Conviction
+          </h3>
+          <p class="text-forest-light text-lg md:text-xl font-light leading-relaxed pl-0 group-hover:pl-9 transition-all duration-300">
+            My standards don’t bend with the circumstances. When I commit to a safety check, a deadline, or a teammate, I follow through: every unit tested, every load secured.
+          </p>
+        </div>
+        <div class="rv frost rounded-2xl p-8 group">
+          <h3 class="font-serif text-2xl md:text-3xl text-forest mb-3 flex items-center gap-4">
+            <i class="fa-solid fa-mountain text-sandstone text-xl opacity-0 group-hover:opacity-100 transition-opacity"></i>
+            Persistent
+          </h3>
+          <p class="text-forest-light text-lg md:text-xl font-light leading-relaxed pl-0 group-hover:pl-9 transition-all duration-300">
+            Twelve-hour shifts, evening classes, and a 14-week leadership program taught me that progress comes from showing up again tomorrow. I stay with a problem until it’s solved.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Hill divider into Expertise -->
+    <svg class="hills h-24 md:h-32" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0 60 C240 10 480 70 760 45 S1200 5 1440 40 V120 H0Z" fill="#C9A66B" opacity=".35"/>
+      <path d="M0 95 C300 55 620 115 960 80 S1320 70 1440 85 V120 H0Z" fill="#EFE7D4"/>
+    </svg>
+  </section>
+
+  <!-- Expertise Section -->
+  <section id="expertise" data-reveal="rise" class="relative pt-20 pb-40 md:pt-28 md:pb-52 overflow-hidden" style="background: linear-gradient(to bottom, #EFE7D4, #E8DDC2);">
+    <div class="fog fog-drift w-[55%] h-32 left-[22%] top-[38%]"></div>
+    <div class="relative z-10 max-w-7xl mx-auto px-6">
+      <div class="rv text-center mb-20">
+        <p class="text-sandstone text-sm font-bold uppercase tracking-[0.2em] mb-4">02 / Expertise</p>
+        <h2 class="font-serif text-4xl md:text-5xl lg:text-6xl text-forest">
+          The Professional Approach
+        </h2>
+      </div>
+
+      <div class="rv grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+        <!-- Card 1 -->
+        <div class="frost rounded-3xl p-10 md:p-16 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+          <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mb-8 shadow-sm">
+            <i class="fa-solid fa-code text-3xl text-sandstone"></i>
+          </div>
+          <h3 class="font-serif text-2xl md:text-3xl text-forest mb-4">Technical Problem Solving</h3>
+          <p class="text-forest-light text-lg font-light leading-relaxed">
+            Python, Java, and SQL/Apex on the Salesforce Lightning platform. At UGA Finance I turned spreadsheet operations into Salesforce objects, Apex triggers, and one-click collection workflows that made the team more productive.
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="frost rounded-3xl p-10 md:p-16 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+          <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mb-8 shadow-sm">
+            <i class="fa-solid fa-microchip text-3xl text-sandstone"></i>
+          </div>
+          <h3 class="font-serif text-2xl md:text-3xl text-forest mb-4">Hands-On Precision</h3>
+          <p class="text-forest-light text-lg font-light leading-relaxed">
+            At Indra Air Traffic I built Park Air receivers and transmitters from schematics, ran HiPot and current-loading safety checks, and used signal analyzers to rework faulty units. That job rewarded getting it right the first time.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Hill divider into Trajectory -->
+    <svg class="hills h-24 md:h-32" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0 55 C260 15 520 75 820 45 S1240 10 1440 35 V120 H0Z" fill="#C9A66B" opacity=".45"/>
+      <path d="M0 90 C320 55 640 110 980 78 S1330 65 1440 80 V120 H0Z" fill="#A3A88A" opacity=".85"/>
+    </svg>
+  </section>
+
+  <!-- Trajectory Section -->
+  <section id="trajectory" data-reveal="blur" class="relative min-h-screen bg-sand-dark overflow-hidden flex">
+    <div class="absolute inset-0 z-0">
+      <!-- Sonoma rolling hills backdrop, tinted dry sage & ochre for an arid feel -->
+      <img src="assets/sonoma-hills.jpg" alt="Sonoma rolling hills with morning fog at sunrise" class="arid-photo w-full h-full object-cover scale-105" style="object-position: center 40%;">
+      <!-- Warm sky at the top, dusty ochre through the hills, fog fading into the next section -->
+      <div class="absolute inset-0" style="background: linear-gradient(to bottom, rgba(212,122,74,.18) 0%, rgba(201,166,107,.15) 50%, rgba(244,241,234,.55) 85%, #F4F1EA 100%);"></div>
+    </div>
+
+    <!-- Horizon split: heading in the sky, vision statement resting in the fog -->
+    <div class="relative z-10 w-full max-w-7xl mx-auto px-6 pt-32 pb-24 md:pt-40 md:pb-32 flex flex-col justify-between gap-24">
+      <div>
+        <p class="rv text-sandstone text-sm font-bold uppercase tracking-[0.2em] mb-4">03 / Trajectory</p>
+        <h2 class="rv font-serif text-5xl md:text-7xl lg:text-8xl text-forest leading-tight">
+          The Future Vision
+        </h2>
+      </div>
+      <p class="rv max-w-3xl text-forest text-2xl md:text-3xl font-light leading-relaxed border-l-2 border-sandstone pl-8">
+        Through the i.c. stars leadership program, I’m building toward a technology career where code, hardware, and people meet. I want to join an innovative tech team, keep learning every day, and build tools that make real work easier, in English or Spanish.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" data-reveal="stagger" class="relative py-24 md:py-32 bg-sand overflow-hidden">
+    <div class="fog fog-drift w-[45%] h-40 left-[-5%] top-[30%]"></div>
+    <div class="fog fog-drift-slow w-[40%] h-32 right-[-5%] top-[60%]"></div>
+    <div class="relative z-10 max-w-4xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <p class="rv text-sandstone text-sm font-bold uppercase tracking-[0.2em] mb-4">04 / Connect</p>
+        <h2 class="rv font-serif text-4xl md:text-5xl lg:text-6xl text-forest">
+          Get In Touch
+        </h2>
+      </div>
+
+      <div class="rv flex flex-wrap justify-center gap-5 mb-12">
+        <a href="mailto:adr0itlearn3r@gmail.com" class="contact-icon" aria-label="Email" data-label="Email"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>
+        <a href="https://www.linkedin.com/in/luca-marin10/" target="_blank" rel="noopener" class="contact-icon" aria-label="LinkedIn (opens in a new tab)" data-label="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+        <a href="https://github.com/lucamarin886" target="_blank" rel="noopener" class="contact-icon" aria-label="GitHub (opens in a new tab)" data-label="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+        <a href="https://lucamarin.carrd.co" target="_blank" rel="noopener" class="contact-icon" aria-label="Carrd (opens in a new tab)" data-label="Carrd"><i class="fa-solid fa-address-card" aria-hidden="true"></i></a>
+      </div>
+
+      <!-- Functional UI Form Component -->
+      <form class="rv frost rounded-3xl p-8 md:p-12" onsubmit="event.preventDefault(); window.location.href='mailto:adr0itlearn3r@gmail.com?subject=' + encodeURIComponent(document.getElementById('subject').value) + '&body=' + encodeURIComponent(document.getElementById('message').value);">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+          <div>
+            <label for="name" class="block text-xs font-bold uppercase tracking-widest text-forest-light mb-2">Name</label>
+            <input type="text" id="name" required class="w-full bg-dune/70 border-b-2 border-sand-dark focus:border-sandstone px-4 py-3 outline-none transition-colors text-forest">
+          </div>
+          <div>
+            <label for="email" class="block text-xs font-bold uppercase tracking-widest text-forest-light mb-2">Email</label>
+            <input type="email" id="email" required class="w-full bg-dune/70 border-b-2 border-sand-dark focus:border-sandstone px-4 py-3 outline-none transition-colors text-forest">
+          </div>
+        </div>
+        <div class="mb-10">
+          <label for="subject" class="block text-xs font-bold uppercase tracking-widest text-forest-light mb-2">Subject</label>
+          <input type="text" id="subject" required class="w-full bg-dune/70 border-b-2 border-sand-dark focus:border-sandstone px-4 py-3 outline-none transition-colors text-forest">
+        </div>
+        <div class="mb-10">
+          <label for="message" class="block text-xs font-bold uppercase tracking-widest text-forest-light mb-2">Message</label>
+          <textarea id="message" rows="4" required class="w-full bg-dune/70 border-b-2 border-sand-dark focus:border-sandstone px-4 py-3 outline-none transition-colors text-forest resize-none"></textarea>
+        </div>
+        <button type="submit" class="w-full md:w-auto px-10 py-4 bg-forest hover:bg-sandstone text-sand rounded-xl font-medium tracking-wide transition-colors flex items-center justify-center gap-3">
+          Send Message
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer: dusk hills -->
+  <footer class="relative bg-sand pt-20 md:pt-28">
+    <svg class="absolute top-0 left-0 w-full h-20 md:h-28" viewBox="0 0 1440 110" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0 60 C260 10 520 70 780 48 S1220 0 1440 38 V110 H0Z" fill="#7C8466"/>
+      <path d="M0 92 C320 55 680 110 1000 80 S1330 70 1440 86 V110 H0Z" fill="#4E5A45"/>
+    </svg>
+    <div class="py-12" style="background: linear-gradient(to bottom, #4E5A45, #323C30);">
+      <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+        <div class="font-serif text-2xl text-sand">Luca Marin<span class="text-sandstone">.</span></div>
+        <div class="flex gap-6 text-sand-dark text-xl">
+          <a href="https://www.linkedin.com/in/luca-marin10/" target="_blank" rel="noopener" class="hover:text-sandstone transition-colors" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="mailto:adr0itlearn3r@gmail.com" class="hover:text-sandstone transition-colors" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+        <div class="text-sage text-sm text-center md:text-right">
+          <p>&copy; 2026 Luca Marin · Overland Park, KS</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/site.js"></script>
+</body>
 </html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Luca Marin</title>
+  <meta name="description" content="About Luca Marin.">
+
+  <!-- Fonts: Lora for Headings, Inter for Body -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Tailwind CSS + shared theme -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="assets/theme.js"></script>
+  <link rel="stylesheet" href="assets/site.css">
+</head>
+<body class="bg-sand text-forest font-sans antialiased selection:bg-sandstone selection:text-white">
+
+  <!-- Navigation -->
+  <header class="fixed w-full top-0 z-50 bg-sand/80 backdrop-blur-md border-b border-sand-dark/70 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="index.html" class="font-serif text-2xl font-medium tracking-tight text-forest">
+        Luca Marin
+      </a>
+      <nav class="hidden lg:flex items-center gap-8 text-sm font-medium tracking-widest uppercase text-forest-light" aria-label="Main"><a href="index.html" class="py-1 transition-colors hover:text-sandstone">Home</a><a href="about.html" class="py-1 transition-colors nav-current" aria-current="page">About</a><a href="experience.html" class="py-1 transition-colors hover:text-sandstone">Experience</a><a href="education.html" class="py-1 transition-colors hover:text-sandstone">Education</a><a href="skills.html" class="py-1 transition-colors hover:text-sandstone">Skills</a><a href="index.html#contact" class="py-1 transition-colors hover:text-sandstone">Contact</a></nav>
+      <button id="menu-btn" class="lg:hidden text-forest text-2xl w-10 h-10 -mr-2 flex items-center justify-center" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+    <div id="mobile-menu" class="mobile-menu lg:hidden border-t border-sand-dark/70 bg-sand/95">
+      <div class="max-w-7xl mx-auto px-6 py-2 text-sm font-medium tracking-widest uppercase text-forest-light"><a href="index.html" class="block py-3 border-b border-sand-dark/60 ">Home</a><a href="about.html" class="block py-3 border-b border-sand-dark/60 text-sandstone">About</a><a href="experience.html" class="block py-3 border-b border-sand-dark/60 ">Experience</a><a href="education.html" class="block py-3 border-b border-sand-dark/60 ">Education</a><a href="skills.html" class="block py-3 border-b border-sand-dark/60 ">Skills</a><a href="index.html#contact" class="block py-3 border-b border-sand-dark/60 ">Contact</a></div>
+    </div>
+  </header>
+
+  <!-- Page banner -->
+  <section data-reveal="stagger" class="relative min-h-[62vh] bg-dune overflow-hidden flex flex-col justify-end px-6 pt-32 pb-28">
+    <div class="absolute inset-0 z-0">
+      <img src="assets/sonoma-hills.jpg" alt="" class="arid-photo w-full h-full object-cover scale-110" style="object-position: center 15%;">
+      <div class="absolute inset-0" style="background: linear-gradient(to bottom, rgba(244,241,234,.35) 0%, rgba(244,241,234,.62) 38%, rgba(244,241,234,.9) 80%, #F4F1EA 100%);"></div>
+      <div class="fog fog-drift w-[60%] h-24 left-[-10%] top-[58%]"></div>
+      <div class="fog fog-drift-slow w-[50%] h-20 right-[-8%] top-[70%]"></div>
+    </div>
+    <div class="relative z-10 max-w-7xl w-full mx-auto">
+      <p class="rv text-sandstone text-sm font-bold uppercase tracking-[0.2em] mb-4">Career · About</p>
+      <h1 class="rv font-serif text-5xl md:text-7xl text-forest leading-tight mb-6">Hello, I’m Luca</h1>
+      <div class="rv w-16 h-1 bg-sandstone mb-6"></div>
+      <p class="rv max-w-2xl text-forest-light text-lg md:text-xl font-light leading-relaxed">A Kansas City problem solver with a technician’s hands, a developer’s curiosity, and a lot of practice showing up for people.</p>
+    </div>
+  </section>
+
+  <section data-reveal="stagger" class="relative pb-24 overflow-hidden" style="background: linear-gradient(to bottom, #F4F1EA, #EFE7D4);">
+    <div class="fog fog-drift-slow w-[40%] h-32 right-[5%] top-[20%]"></div>
+    <div class="relative z-10 max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-5 gap-12 items-start">
+      <div class="lg:col-span-3 space-y-6 text-forest-light text-lg md:text-xl font-light leading-relaxed">
+        <p class="rv">I’m a problem solver with a strong foundation in technical support, customer service, and mechanical work. I’ve written Python and Java, built Apex triggers and workflows in Salesforce Lightning, and most recently assembled and tested radio equipment used in air traffic control.</p>
+        <p class="rv">I’m currently a Cycle 7 Solutions Intern at i.c. stars, a 14-week technology and business leadership program built on hands-on projects. I’m also enrolled at Kansas City Kansas Community College to study electronics technology.</p>
+        <p class="rv">Across more than eight years of customer-facing work, in English and Spanish, I’ve learned that the best technology serves people. I’m passionate about continuous learning and want to bring that mindset to an innovative tech team.</p>
+      </div>
+      <aside class="rv lg:col-span-2 frost rounded-3xl p-8">
+        <h2 class="font-serif text-2xl text-forest mb-2">At a glance</h2>
+        <ul>
+            <li class="flex gap-4 py-4 border-b border-sand-dark/70 last:border-0">
+              <i class="fa-solid fa-location-dot text-sandstone mt-1 w-5 text-center"></i>
+              <div><p class="text-xs font-bold uppercase tracking-widest text-forest-light">Based in</p><p class="text-forest text-lg">Kansas City metro · Overland Park, KS</p></div>
+            </li>
+            <li class="flex gap-4 py-4 border-b border-sand-dark/70 last:border-0">
+              <i class="fa-solid fa-star text-sandstone mt-1 w-5 text-center"></i>
+              <div><p class="text-xs font-bold uppercase tracking-widest text-forest-light">Currently</p><p class="text-forest text-lg">Cycle 7 Solutions Intern, i.c. stars</p></div>
+            </li>
+            <li class="flex gap-4 py-4 border-b border-sand-dark/70 last:border-0">
+              <i class="fa-solid fa-bolt text-sandstone mt-1 w-5 text-center"></i>
+              <div><p class="text-xs font-bold uppercase tracking-widest text-forest-light">Studying</p><p class="text-forest text-lg">Electronics technology at Kansas City Kansas Community College</p></div>
+            </li>
+            <li class="flex gap-4 py-4 border-b border-sand-dark/70 last:border-0">
+              <i class="fa-solid fa-briefcase text-sandstone mt-1 w-5 text-center"></i>
+              <div><p class="text-xs font-bold uppercase tracking-widest text-forest-light">Before that</p><p class="text-forest text-lg">Assembler and Test Technician, Indra Air Traffic</p></div>
+            </li>
+            <li class="flex gap-4 py-4 border-b border-sand-dark/70 last:border-0">
+              <i class="fa-solid fa-door-open text-sandstone mt-1 w-5 text-center"></i>
+              <div><p class="text-xs font-bold uppercase tracking-widest text-forest-light">Open to</p><p class="text-forest text-lg">On-site and hybrid roles</p></div>
+            </li>
+            <li class="flex gap-4 py-4 border-b border-sand-dark/70 last:border-0">
+              <i class="fa-solid fa-language text-sandstone mt-1 w-5 text-center"></i>
+              <div><p class="text-xs font-bold uppercase tracking-widest text-forest-light">Languages</p><p class="text-forest text-lg">English and Spanish (fluent), German, Japanese</p></div>
+            </li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <section data-reveal="rise" class="relative pt-8 pb-40 md:pb-52 overflow-hidden" style="background: linear-gradient(to bottom, #EFE7D4, #E8DDC2);">
+    <div class="fog fog-drift w-[55%] h-32 left-[22%] top-[38%]"></div>
+    <div class="relative z-10 max-w-7xl mx-auto px-6">
+      <div class="rv text-center mb-14">
+        <p class="text-sandstone text-sm font-bold uppercase tracking-[0.2em] mb-4">Beyond Work</p>
+        <h2 class="font-serif text-4xl md:text-5xl text-forest">Giving Back</h2>
+      </div>
+      <div class="rv grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+        <div class="frost rounded-3xl p-10 md:p-14 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+          <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mb-8 shadow-sm"><i class="fa-solid fa-hands-holding-child text-3xl text-sandstone"></i></div>
+          <h3 class="font-serif text-2xl md:text-3xl text-forest mb-4">Elementary School Tutor</h3>
+          <p class="text-forest-light text-lg font-light leading-relaxed">Served 42 hours of community service tutoring students at Hawthorn, Prairie Point, Tiffany Ridge, and Chinn Elementary schools.</p>
+        </div>
+        <div class="frost rounded-3xl p-10 md:p-14 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+          <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mb-8 shadow-sm"><i class="fa-solid fa-seedling text-3xl text-sandstone"></i></div>
+          <h3 class="font-serif text-2xl md:text-3xl text-forest mb-4">Financial Literacy for Young People</h3>
+          <p class="text-forest-light text-lg font-light leading-relaxed">At CommunityAmerica Credit Union, I helped research how teens and young adults understand credit, and helped shape an app that rewards them for learning how money works.</p>
+        </div>
+      </div>
+    </div>
+    <svg class="hills h-24 md:h-32" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0 60 C240 10 480 70 760 45 S1200 5 1440 40 V120 H0Z" fill="#C9A66B" opacity=".35"/>
+      <path d="M0 95 C300 55 620 115 960 80 S1320 70 1440 85 V120 H0Z" fill="#F4F1EA"/>
+    </svg>
+  </section>
+
+  <section data-reveal="stagger" class="relative py-20 bg-sand overflow-hidden">
+    <div class="fog fog-drift w-[45%] h-32 left-[-5%] top-[20%]"></div>
+    <div class="relative z-10 max-w-3xl mx-auto px-6 text-center">
+      <h2 class="rv font-serif text-3xl md:text-4xl text-forest mb-4">Want to talk?</h2>
+      <p class="rv text-forest-light text-lg font-light mb-8">Send a message from the contact form, or connect with me on LinkedIn.</p>
+      <div class="rv flex flex-wrap justify-center gap-3">
+        <a href="index.html#contact" class="px-8 py-4 bg-forest hover:bg-sandstone text-sand rounded-xl font-medium tracking-wide transition-colors inline-flex items-center gap-3">Get in touch <i class="fa-solid fa-arrow-right"></i></a>
+        <a href="https://www.linkedin.com/in/luca-marin10/" target="_blank" rel="noopener" class="px-8 py-4 frost hover:bg-white rounded-xl font-medium tracking-wide transition-colors inline-flex items-center gap-3 text-forest"><i class="fa-brands fa-linkedin"></i> View LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer: dusk hills -->
+  <footer class="relative bg-sand pt-20 md:pt-28">
+    <svg class="absolute top-0 left-0 w-full h-20 md:h-28" viewBox="0 0 1440 110" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0 60 C260 10 520 70 780 48 S1220 0 1440 38 V110 H0Z" fill="#7C8466"/>
+      <path d="M0 92 C320 55 680 110 1000 80 S1330 70 1440 86 V110 H0Z" fill="#4E5A45"/>
+    </svg>
+    <div class="py-12" style="background: linear-gradient(to bottom, #4E5A45, #323C30);">
+      <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+        <div class="font-serif text-2xl text-sand">Luca Marin<span class="text-sandstone">.</span></div>
+        <div class="flex gap-6 text-sand-dark text-xl">
+          <a href="https://www.linkedin.com/in/luca-marin10/" target="_blank" rel="noopener" class="hover:text-sandstone transition-colors" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="mailto:adr0itlearn3r@gmail.com" class="hover:text-sandstone transition-colors" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+        <div class="text-sage text-sm text-center md:text-right">
+          <p>&copy; 2026 Luca Marin · Overland Park, KS</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/site.js"></script>
+</body>
+</html>

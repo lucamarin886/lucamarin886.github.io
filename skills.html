@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skills | Luca Marin</title>
+  <meta name="description" content="Technical and transferable skills of Luca Marin.">
+
+  <!-- Fonts: Lora for Headings, Inter for Body -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Tailwind CSS + shared theme -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="assets/theme.js"></script>
+  <link rel="stylesheet" href="assets/site.css">
+</head>
+<body class="bg-sand text-forest font-sans antialiased selection:bg-sandstone selection:text-white">
+
+  <!-- Navigation -->
+  <header class="fixed w-full top-0 z-50 bg-sand/80 backdrop-blur-md border-b border-sand-dark/70 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="index.html" class="font-serif text-2xl font-medium tracking-tight text-forest">
+        Luca Marin
+      </a>
+      <nav class="hidden lg:flex items-center gap-8 text-sm font-medium tracking-widest uppercase text-forest-light" aria-label="Main"><a href="index.html" class="py-1 transition-colors hover:text-sandstone">Home</a><a href="about.html" class="py-1 transition-colors hover:text-sandstone">About</a><a href="experience.html" class="py-1 transition-colors hover:text-sandstone">Experience</a><a href="education.html" class="py-1 transition-colors hover:text-sandstone">Education</a><a href="skills.html" class="py-1 transition-colors nav-current" aria-current="page">Skills</a><a href="index.html#contact" class="py-1 transition-colors hover:text-sandstone">Contact</a></nav>
+      <button id="menu-btn" class="lg:hidden text-forest text-2xl w-10 h-10 -mr-2 flex items-center justify-center" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+    <div id="mobile-menu" class="mobile-menu lg:hidden border-t border-sand-dark/70 bg-sand/95">
+      <div class="max-w-7xl mx-auto px-6 py-2 text-sm font-medium tracking-widest uppercase text-forest-light"><a href="index.html" class="block py-3 border-b border-sand-dark/60 ">Home</a><a href="about.html" class="block py-3 border-b border-sand-dark/60 ">About</a><a href="experience.html" class="block py-3 border-b border-sand-dark/60 ">Experience</a><a href="education.html" class="block py-3 border-b border-sand-dark/60 ">Education</a><a href="skills.html" class="block py-3 border-b border-sand-dark/60 text-sandstone">Skills</a><a href="index.html#contact" class="block py-3 border-b border-sand-dark/60 ">Contact</a></div>
+    </div>
+  </header>
+
+  <!-- Page banner -->
+  <section data-reveal="stagger" class="relative min-h-[62vh] bg-dune overflow-hidden flex flex-col justify-end px-6 pt-32 pb-28">
+    <div class="absolute inset-0 z-0">
+      <img src="assets/sonoma-hills.jpg" alt="" class="arid-photo w-full h-full object-cover scale-110" style="object-position: center 15%;">
+      <div class="absolute inset-0" style="background: linear-gradient(to bottom, rgba(244,241,234,.35) 0%, rgba(244,241,234,.62) 38%, rgba(244,241,234,.9) 80%, #F4F1EA 100%);"></div>
+      <div class="fog fog-drift w-[60%] h-24 left-[-10%] top-[58%]"></div>
+      <div class="fog fog-drift-slow w-[50%] h-20 right-[-8%] top-[70%]"></div>
+    </div>
+    <div class="relative z-10 max-w-7xl w-full mx-auto">
+      <p class="rv text-sandstone text-sm font-bold uppercase tracking-[0.2em] mb-4">Career · Skills</p>
+      <h1 class="rv font-serif text-5xl md:text-7xl text-forest leading-tight mb-6">The Toolkit</h1>
+      <div class="rv w-16 h-1 bg-sandstone mb-6"></div>
+      <p class="rv max-w-2xl text-forest-light text-lg md:text-xl font-light leading-relaxed">Code, circuits, and logistics: a mix of skills that lets me understand how systems work from the keyboard to the loading dock.</p>
+    </div>
+  </section>
+
+  <section class="relative pb-24 overflow-hidden" style="background: linear-gradient(to bottom, #F4F1EA, #EFE7D4);">
+    <div class="fog fog-drift-slow w-[40%] h-32 right-[5%] top-[20%]"></div>
+    <div data-reveal="stagger" class="relative z-10 max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8">
+        <article class="rv frost rounded-3xl p-8 md:p-10">
+          <div class="flex items-center gap-4 mb-2">
+            <div class="w-12 h-12 bg-white rounded-2xl flex items-center justify-center shadow-sm"><i class="fa-solid fa-code text-xl text-sandstone"></i></div>
+            <h3 class="font-serif text-2xl md:text-3xl text-forest">Software and Data</h3>
+          </div>
+          <p class="text-forest-light font-light leading-relaxed mb-6">Languages and platforms I’ve used to build things and to clean up messy processes.</p>
+          <div class="flex flex-wrap gap-2"><span class="chip text-sm">Python</span><span class="chip text-sm">Java</span><span class="chip text-sm">SQL</span><span class="chip text-sm">Apex (Salesforce)</span><span class="chip text-sm">Salesforce Lightning Experience</span><span class="chip text-sm">Oracle</span><span class="chip text-sm">Microsoft Office</span><span class="chip text-sm">Cloudbeds</span></div>
+        </article>
+        <article class="rv frost rounded-3xl p-8 md:p-10">
+          <div class="flex items-center gap-4 mb-2">
+            <div class="w-12 h-12 bg-white rounded-2xl flex items-center justify-center shadow-sm"><i class="fa-solid fa-microchip text-xl text-sandstone"></i></div>
+            <h3 class="font-serif text-2xl md:text-3xl text-forest">Electronics and Testing</h3>
+          </div>
+          <p class="text-forest-light font-light leading-relaxed mb-6">Bench skills from assembling and repairing air-traffic radio equipment.</p>
+          <div class="flex flex-wrap gap-2"><span class="chip text-sm">Reading schematics</span><span class="chip text-sm">Receiver and transmitter assembly</span><span class="chip text-sm">HiPot testing</span><span class="chip text-sm">Signal analyzers</span><span class="chip text-sm">Current-loading safety checks</span><span class="chip text-sm">Unit rework</span></div>
+        </article>
+        <article class="rv frost rounded-3xl p-8 md:p-10">
+          <div class="flex items-center gap-4 mb-2">
+            <div class="w-12 h-12 bg-white rounded-2xl flex items-center justify-center shadow-sm"><i class="fa-solid fa-truck-ramp-box text-xl text-sandstone"></i></div>
+            <h3 class="font-serif text-2xl md:text-3xl text-forest">Operations and Logistics</h3>
+          </div>
+          <p class="text-forest-light font-light leading-relaxed mb-6">Keeping freight moving safely and on time across five warehouse operations.</p>
+          <div class="flex flex-wrap gap-2"><span class="chip text-sm">Stand-up and sit-down forklifts</span><span class="chip text-sm">Propane forklift trucks</span><span class="chip text-sm">Electric pallet jacks</span><span class="chip text-sm">LTL trailer loading</span><span class="chip text-sm">Hazmat guidelines</span><span class="chip text-sm">RFID tagging</span><span class="chip text-sm">Inventory databases</span></div>
+        </article>
+        <article class="rv frost rounded-3xl p-8 md:p-10">
+          <div class="flex items-center gap-4 mb-2">
+            <div class="w-12 h-12 bg-white rounded-2xl flex items-center justify-center shadow-sm"><i class="fa-solid fa-people-group text-xl text-sandstone"></i></div>
+            <h3 class="font-serif text-2xl md:text-3xl text-forest">Working With People</h3>
+          </div>
+          <p class="text-forest-light font-light leading-relaxed mb-6">The strengths that travel with me from one job to the next.</p>
+          <div class="flex flex-wrap gap-2"><span class="chip text-sm">Problem solving</span><span class="chip text-sm">Communication</span><span class="chip text-sm">Adaptability</span><span class="chip text-sm">Customer service</span><span class="chip text-sm">Time management</span><span class="chip text-sm">Logistics planning</span><span class="chip text-sm">Cross-training</span></div>
+        </article>
+    </div>
+  </section>
+
+  <section data-reveal="rise" class="relative pt-8 pb-40 md:pb-52 overflow-hidden" style="background: linear-gradient(to bottom, #EFE7D4, #E8DDC2);">
+    <div class="fog fog-drift w-[55%] h-32 left-[22%] top-[38%]"></div>
+    <div class="relative z-10 max-w-5xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+      <div class="rv">
+        <p class="text-sandstone text-sm font-bold uppercase tracking-[0.2em] mb-4">Languages</p>
+        <h2 class="font-serif text-4xl md:text-5xl text-forest mb-6 leading-tight">Speaking Your Language</h2>
+        <p class="text-forest-light text-lg font-light leading-relaxed">Fully bilingual in English and Spanish, which has been a real asset across more than eight years of customer-facing work. I’m also learning German and Japanese.</p>
+      </div>
+      <div class="rv frost rounded-3xl p-8 md:p-10 space-y-6">
+          <div>
+            <div class="flex justify-between mb-2"><span class="font-serif text-xl text-forest">English</span><span class="text-sm text-forest-light">Fluent</span></div>
+            <div class="meter" role="img" aria-label="English: Fluent"><span style="width:100%"></span></div>
+          </div>
+          <div>
+            <div class="flex justify-between mb-2"><span class="font-serif text-xl text-forest">Spanish</span><span class="text-sm text-forest-light">Fluent</span></div>
+            <div class="meter" role="img" aria-label="Spanish: Fluent"><span style="width:100%"></span></div>
+          </div>
+          <div>
+            <div class="flex justify-between mb-2"><span class="font-serif text-xl text-forest">German</span><span class="text-sm text-forest-light">Novice</span></div>
+            <div class="meter" role="img" aria-label="German: Novice"><span style="width:30%"></span></div>
+          </div>
+          <div>
+            <div class="flex justify-between mb-2"><span class="font-serif text-xl text-forest">Japanese</span><span class="text-sm text-forest-light">Beginner</span></div>
+            <div class="meter" role="img" aria-label="Japanese: Beginner"><span style="width:18%"></span></div>
+          </div>
+      </div>
+    </div>
+    <svg class="hills h-24 md:h-32" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0 60 C240 10 480 70 760 45 S1200 5 1440 40 V120 H0Z" fill="#C9A66B" opacity=".35"/>
+      <path d="M0 95 C300 55 620 115 960 80 S1320 70 1440 85 V120 H0Z" fill="#F4F1EA"/>
+    </svg>
+  </section>
+
+  <section data-reveal="stagger" class="relative py-20 bg-sand overflow-hidden">
+    <div class="fog fog-drift w-[45%] h-32 left-[-5%] top-[20%]"></div>
+    <div class="relative z-10 max-w-3xl mx-auto px-6 text-center">
+      <h2 class="rv font-serif text-3xl md:text-4xl text-forest mb-4">Need these skills on your team?</h2>
+      <p class="rv text-forest-light text-lg font-light mb-8">I’m open to on-site and hybrid roles around Kansas City.</p>
+      <div class="rv flex flex-wrap justify-center gap-3">
+        <a href="index.html#contact" class="px-8 py-4 bg-forest hover:bg-sandstone text-sand rounded-xl font-medium tracking-wide transition-colors inline-flex items-center gap-3">Get in touch <i class="fa-solid fa-arrow-right"></i></a>
+        <a href="https://www.linkedin.com/in/luca-marin10/" target="_blank" rel="noopener" class="px-8 py-4 frost hover:bg-white rounded-xl font-medium tracking-wide transition-colors inline-flex items-center gap-3 text-forest"><i class="fa-brands fa-linkedin"></i> View LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer: dusk hills -->
+  <footer class="relative bg-sand pt-20 md:pt-28">
+    <svg class="absolute top-0 left-0 w-full h-20 md:h-28" viewBox="0 0 1440 110" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0 60 C260 10 520 70 780 48 S1220 0 1440 38 V110 H0Z" fill="#7C8466"/>
+      <path d="M0 92 C320 55 680 110 1000 80 S1330 70 1440 86 V110 H0Z" fill="#4E5A45"/>
+    </svg>
+    <div class="py-12" style="background: linear-gradient(to bottom, #4E5A45, #323C30);">
+      <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+        <div class="font-serif text-2xl text-sand">Luca Marin<span class="text-sandstone">.</span></div>
+        <div class="flex gap-6 text-sand-dark text-xl">
+          <a href="https://www.linkedin.com/in/luca-marin10/" target="_blank" rel="noopener" class="hover:text-sandstone transition-colors" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="mailto:adr0itlearn3r@gmail.com" class="hover:text-sandstone transition-colors" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+        <div class="text-sage text-sm text-center md:text-right">
+          <p>&copy; 2026 Luca Marin · Overland Park, KS</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/site.js"></script>
+</body>
+</html>
